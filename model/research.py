@@ -190,7 +190,7 @@ if __name__ == "__main__":
     # Print results
     print("\n=== Top 10 Journal Recommendations ===")
     for idx, j in enumerate(top10, 1):
-        print(f"{idx}. {j['name']} (Score: {j['score']:.4f})")
+        print(f"{idx}. {j['name']} (Score: {j['score'] * 100:.2f}%)")
         print(f"   Publisher: {j['publisher']}")
         print(f"   URL: {j['url']}")
         print(f"   Subjects: {', '.join(j['subjects'][:5])}\n")
