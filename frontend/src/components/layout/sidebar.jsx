@@ -58,6 +58,17 @@ const Sidebar = ({ user, isCollapsed, toggleSidebar }) => {
             {isCollapsed ? "👤" : "Journal Recommender"}
           </NavLink>
           <NavLink
+            to="/chatbot"
+            className={({ isActive }) =>
+              `block py-2.5 px-4 rounded transition duration-200 ${
+                isActive ? "bg-black/30 text-blue-600 text-gray-700" : "hover:bg-black/10 text-black"
+              } ${isCollapsed ? "text-center" : ""}`
+            }
+            title={isCollapsed ? "ResearchBuddy" : ""}
+          >
+            {isCollapsed ? "👤" : "ResearchBuddy"}
+          </NavLink>
+          <NavLink
             to="/research-papers"
             className={({ isActive }) =>
               `block py-2.5 px-4 rounded transition duration-200 ${

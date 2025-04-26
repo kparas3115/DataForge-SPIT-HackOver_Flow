@@ -1,5 +1,4 @@
-# Import necessary Flask modules
-from flask import Flask, Blueprint, request, jsonify
+from flask import Flask, Blueprint, request, jsonify, render_template
 from flask_cors import CORS
 import traceback
 import os
@@ -7,6 +6,9 @@ import numpy as np
 
 # Import your recommender code
 from research import JournalRecommender
+
+# Import chatbot routes
+from chatbot import register_chatbot_routes, chatbot_api
 
 # Create a Blueprint for the recommender API
 recommender_api = Blueprint('recommender_api', __name__)
@@ -79,14 +81,16 @@ def recommend_journals():
         }), 500
 
 
-# How to register this blueprint in your main Flask app:
-
 def create_app():
     app = Flask(__name__)
     CORS(app)
+    
+    # Register blueprints
     app.register_blueprint(recommender_api)
+    register_chatbot_routes(app)  # Register chatbot routes
+    
     return app
 
 if __name__ == '__main__':
     app = create_app()
-    app.run(debug=True) 
+    app.run(debug=True)
