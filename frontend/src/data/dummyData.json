@@ -1,0 +1,228 @@
+{
+    "datasets": [
+      {
+        "id": "1",
+        "title": "Climate Change Dataset 2023",
+        "description": "Global temperature and CO2 emissions data from 1950-2023",
+        "tags": ["climate", "environmental", "global-warming", "statistics"],
+        "files": [
+          {
+            "name": "temperature_data.csv",
+            "size": 15728640,
+            "type": "csv"
+          },
+          {
+            "name": "emissions_2023.xlsx",
+            "size": 20971520,
+            "type": "excel"
+          }
+        ],
+        "created_at": "2023-12-01"
+      },
+      {
+        "id": "2",
+        "title": "Medical Research Database",
+        "description": "Anonymized patient records for COVID-19 research",
+        "tags": ["medical", "covid-19", "healthcare", "research"],
+        "files": [
+          {
+            "name": "patient_records.json",
+            "size": 31457280,
+            "type": "json"
+          }
+        ],
+        "created_at": "2023-11-28"
+      },
+      {
+        "id": "3",
+        "title": "Social Media Sentiment Analysis",
+        "description": "Large-scale Twitter sentiment data across multiple topics including politics, products, and entertainment from 2020-2023",
+        "tags": ["nlp", "social-media", "sentiment-analysis", "twitter", "machine-learning"],
+        "files": [
+          {
+            "name": "twitter_sentiments.csv",
+            "size": 52428800,
+            "type": "csv"
+          },
+          {
+            "name": "preprocessing_scripts.zip",
+            "size": 1048576,
+            "type": "zip"
+          }
+        ],
+        "created_at": "2023-12-05"
+      },
+      {
+        "id": "4",
+        "title": "Autonomous Vehicle Sensor Data",
+        "description": "LIDAR and camera data from autonomous vehicle testing in urban environments",
+        "tags": ["autonomous-vehicles", "computer-vision", "sensor-data", "robotics"],
+        "files": [
+          {
+            "name": "lidar_readings.parquet",
+            "size": 104857600,
+            "type": "parquet"
+          },
+          {
+            "name": "camera_footage.zip",
+            "size": 209715200,
+            "type": "zip"
+          }
+        ],
+        "created_at": "2023-12-03"
+      },
+      {
+        "id": "5",
+        "title": "Genomic Sequences Database",
+        "description": "Collection of DNA sequences from various species with annotations and metadata",
+        "tags": ["genomics", "biology", "dna-sequencing", "bioinformatics"],
+        "files": [
+          {
+            "name": "sequences.fasta",
+            "size": 83886080,
+            "type": "fasta"
+          },
+          {
+            "name": "metadata.json",
+            "size": 5242880,
+            "type": "json"
+          }
+        ],
+        "created_at": "2023-12-02"
+      },
+      {
+        "id": "6",
+        "title": "E-commerce Customer Behavior",
+        "description": "Anonymous customer transaction and browsing data from a major online retailer",
+        "tags": ["e-commerce", "customer-behavior", "marketing", "analytics"],
+        "files": [
+          {
+            "name": "transactions.csv",
+            "size": 41943040,
+            "type": "csv"
+          },
+          {
+            "name": "user_sessions.json",
+            "size": 31457280,
+            "type": "json"
+          }
+        ],
+        "created_at": "2023-12-04"
+      },
+      {
+        "id": "7",
+        "title": "Astronomical Object Catalog",
+        "description": "Comprehensive catalog of celestial objects including stars, galaxies, and nebulae",
+        "tags": ["astronomy", "space", "celestial-objects", "astrophysics"],
+        "files": [
+          {
+            "name": "stellar_objects.fits",
+            "size": 157286400,
+            "type": "fits"
+          },
+          {
+            "name": "object_classifications.csv",
+            "size": 20971520,
+            "type": "csv"
+          }
+        ],
+        "created_at": "2023-12-01"
+      },
+      {
+        "id": "8",
+        "title": "Financial Market Historical Data",
+        "description": "10-year historical data for stocks, cryptocurrencies, and forex markets",
+        "tags": ["finance", "stock-market", "crypto", "forex", "trading"],
+        "files": [
+          {
+            "name": "stock_prices.parquet",
+            "size": 73400320,
+            "type": "parquet"
+          },
+          {
+            "name": "crypto_trades.csv",
+            "size": 94371840,
+            "type": "csv"
+          }
+        ],
+        "created_at": "2023-11-30"
+      },
+      {
+        "id": "9",
+        "title": "Brain MRI Image Collection",
+        "description": "High-resolution MRI scans of human brains with various neurological conditions, annotated by expert radiologists",
+        "tags": ["medical-imaging", "neuroscience", "mri", "healthcare", "deep-learning"],
+        "files": [
+          {
+            "name": "mri_scans.nii.gz",
+            "size": 524288000,
+            "type": "nii.gz"
+          },
+          {
+            "name": "annotations.json",
+            "size": 15728640,
+            "type": "json"
+          }
+        ],
+        "created_at": "2023-12-06"
+      },
+      {
+        "id": "10",
+        "title": "Language Learning Patterns",
+        "description": "Dataset containing learning patterns of multilingual students across different age groups and languages",
+        "tags": ["linguistics", "education", "language-learning", "cognitive-science"],
+        "files": [
+          {
+            "name": "learning_patterns.csv",
+            "size": 31457280,
+            "type": "csv"
+          },
+          {
+            "name": "audio_samples.zip",
+            "size": 157286400,
+            "type": "zip"
+          }
+        ],
+        "created_at": "2023-12-07"
+      },
+      {
+        "id": "11",
+        "title": "Quantum Computing Experiments",
+        "description": "Results from quantum computing experiments including qubit states and quantum circuit simulations",
+        "tags": ["quantum-computing", "physics", "quantum-mechanics", "computer-science"],
+        "files": [
+          {
+            "name": "quantum_states.hdf5",
+            "size": 83886080,
+            "type": "hdf5"
+          },
+          {
+            "name": "circuit_diagrams.svg",
+            "size": 10485760,
+            "type": "svg"
+          }
+        ],
+        "created_at": "2023-12-08"
+      },
+      {
+        "id": "12",
+        "title": "Smart City IoT Sensors",
+        "description": "Real-time data from IoT sensors deployed across smart cities measuring air quality, traffic, and energy consumption",
+        "tags": ["iot", "smart-city", "environmental-monitoring", "real-time-data"],
+        "files": [
+          {
+            "name": "sensor_readings.parquet",
+            "size": 209715200,
+            "type": "parquet"
+          },
+          {
+            "name": "sensor_locations.geojson",
+            "size": 5242880,
+            "type": "geojson"
+          }
+        ],
+        "created_at": "2023-12-09"
+      }
+    ]
+  }
+  

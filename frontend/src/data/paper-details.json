@@ -1,0 +1,66 @@
+{
+    "papers": {
+      "1": {
+        "id": 1,
+        "title": "Attention Is All You Need",
+        "authors": [
+          {
+            "name": "Ashish Vaswani",
+            "affiliation": "Google Brain",
+            "email": "avaswani@google.com",
+            "role": "Research Scientist",
+            "department": "Machine Learning"
+          },
+          {
+            "name": "Noam Shazeer",
+            "affiliation": "Google Brain",
+            "email": "nshazeer@google.com",
+            "role": "Research Scientist",
+            "department": "Machine Learning"
+          },
+          {
+            "name": "Niki Parmar",
+            "affiliation": "Google Brain",
+            "email": "nparmar@google.com",
+            "role": "Research Scientist",
+            "department": "Machine Learning"
+          }
+        ],
+        "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks... We propose a new simple network architecture, the Transformer, based solely on attention mechanisms...",
+        "fullText": "1. Introduction\nRecurrent neural networks, long short-term memory networks, and gated recurrent neural networks have been firmly established as state-of-the-art approaches...",
+        "type": "Research Article",
+        "field": "Machine Learning",
+        "citations": 78900,
+        "keywords": ["transformer", "attention mechanism", "sequence modeling"],
+        "tags": ["deep learning", "natural language processing", "neural networks"],
+        "date": "2017-06-12",
+        "journal": {
+          "name": "Advances in Neural Information Processing Systems",
+          "volume": "30",
+          "issue": "1",
+          "pages": "5998-6008"
+        },
+        "metrics": {
+          "downloads": 150000,
+          "readers": 300000,
+          "citations": 78900
+        },
+        "comments": [
+          {
+            "id": 1,
+            "author": "Yann LeCun",
+            "content": "A groundbreaking paper that revolutionized NLP!",
+            "date": "2017-07-01",
+            "likes": 1200
+          },
+          {
+            "id": 2,
+            "author": "Andrew Ng",
+            "content": "The Transformer architecture is a game-changer for sequence modeling.",
+            "date": "2017-07-05",
+            "likes": 950
+          }
+        ]
+      }
+    }
+  }

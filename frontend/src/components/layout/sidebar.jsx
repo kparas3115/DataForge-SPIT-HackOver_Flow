@@ -29,7 +29,7 @@ const Sidebar = ({ user, isCollapsed, toggleSidebar }) => {
         <div className="p-4 border-b border-gray-200 flex items-center justify-between">
           {!isCollapsed && (
             <div className="flex flex-col">
-              <a href="/" className="text-2xl font-bold text-black">ReSync</a>
+              <a href="/" className="text-2xl font-bold text-black">Research<span className="font-hindi">साथी</span></a>
               {user && (
                 <p className="text-sm text-gray-600 mt-2">
                   Hi, {user.firstName} {user.lastName}

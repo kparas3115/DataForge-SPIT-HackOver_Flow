@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Markdown styles */
+.markdown-wrapper h1,
+.markdown-wrapper h2,
+.markdown-wrapper h3 {
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.markdown-wrapper h1 {
+  font-size: 1.5em;
+}
+
+.markdown-wrapper h2 {
+  font-size: 1.25em;
+}
+
+.markdown-wrapper h3 {
+  font-size: 1.1em;
+}
+
+.markdown-wrapper p {
+  margin-bottom: 0.75em;
+}
+
+.markdown-wrapper ul,
+.markdown-wrapper ol {
+  padding-left: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.markdown-wrapper li {
+  margin-bottom: 0.25em;
+}
+
+.markdown-wrapper code {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.markdown-wrapper pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.75em;
+  border-radius: 3px;
+  overflow-x: auto;
+  margin-bottom: 0.75em;
+}
+
+.markdown-wrapper blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  color: #555;
+}
+
+/* Adjust colors for user messages */
+.bg-blue-600 .markdown-wrapper {
+  color: white;
+}
+
+.bg-blue-600 .markdown-wrapper code,
+.bg-blue-600 .markdown-wrapper pre {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-blue-600 .markdown-wrapper blockquote {
+  border-left-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+}

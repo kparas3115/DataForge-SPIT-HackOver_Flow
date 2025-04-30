@@ -1,0 +1,165 @@
+{
+    "id": "oalex-1",
+    "title": "Smart City IoT Sensors",
+    "description": "Real-time data from IoT sensors deployed across smart cities measuring air quality, traffic, and energy consumption.",
+    "tags": ["iot", "smart-city", "environmental-monitoring", "real-time-data"],
+    "files": [
+      {
+        "name": "sensor_readings.parquet",
+        "size": 209715200,
+        "type": "parquet"
+      },
+      {
+        "name": "sensor_locations.geojson",
+        "size": 5242880,
+        "type": "geojson"
+      }
+    ],
+    "created_at": "2023-12-09",
+    "overview": {
+      "source": "City IoT Department",
+      "data_format": ["parquet", "geojson"],
+      "total_rows": 5000000,
+      "total_columns": 12,
+      "last_updated": "2024-06-15"
+    },
+    "sample_data": {
+      "columns": [
+        {"name": "sensor_id", "type": "integer"},
+        {"name": "timestamp", "type": "datetime"},
+        {"name": "temperature", "type": "float"},
+        {"name": "humidity", "type": "float"},
+        {"name": "air_quality_index", "type": "integer"},
+        {"name": "traffic_density", "type": "integer"},
+        {"name": "energy_consumption", "type": "float"}
+      ],
+      "preview": [
+        {
+          "sensor_id": 101,
+          "timestamp": "2024-06-15T10:30:00",
+          "temperature": 27.5,
+          "humidity": 60.2,
+          "air_quality_index": 45,
+          "traffic_density": 120,
+          "energy_consumption": 23.4
+        },
+        {
+          "sensor_id": 102,
+          "timestamp": "2024-06-15T10:30:10",
+          "temperature": 26.8,
+          "humidity": 58.6,
+          "air_quality_index": 50,
+          "traffic_density": 130,
+          "energy_consumption": 21.8
+        }
+      ],
+      "missing_values": {
+        "temperature": "0.5%",
+        "humidity": "0.2%",
+        "air_quality_index": "0%",
+        "traffic_density": "1.2%",
+        "energy_consumption": "0.8%"
+      }
+    },
+    "data_dictionary": [
+      {
+        "column": "sensor_id",
+        "description": "Unique identifier for each IoT sensor",
+        "type": "integer",
+        "example": 101
+      },
+      {
+        "column": "timestamp",
+        "description": "Date and time of recorded data",
+        "type": "datetime",
+        "example": "2024-06-15T10:30:00"
+      },
+      {
+        "column": "temperature",
+        "description": "Temperature in Celsius recorded by the sensor",
+        "type": "float",
+        "example": 27.5
+      },
+      {
+        "column": "humidity",
+        "description": "Humidity percentage recorded by the sensor",
+        "type": "float",
+        "example": 60.2
+      },
+      {
+        "column": "air_quality_index",
+        "description": "AQI value indicating air pollution level",
+        "type": "integer",
+        "example": 45
+      },
+      {
+        "column": "traffic_density",
+        "description": "Traffic congestion level near sensor location",
+        "type": "integer",
+        "example": 120
+      },
+      {
+        "column": "energy_consumption",
+        "description": "Energy consumption in kilowatt-hours",
+        "type": "float",
+        "example": 23.4
+      }
+    ],
+    "visualizations": {
+      "data_distribution": [
+        {"column": "temperature", "chart_type": "histogram"},
+        {"column": "air_quality_index", "chart_type": "bar_chart"},
+        {"column": "traffic_density", "chart_type": "pie_chart"}
+      ],
+      "correlation_heatmap": true,
+      "time_series_trend": ["temperature", "air_quality_index"]
+    },
+    "eda": {
+      "missing_values_percentage": {
+        "temperature": 0.5,
+        "humidity": 0.2,
+        "air_quality_index": 0,
+        "traffic_density": 1.2,
+        "energy_consumption": 0.8
+      },
+      "outliers_detection": ["temperature", "air_quality_index"],
+      "skewness_analysis": ["temperature", "humidity"],
+      "kurtosis_analysis": ["air_quality_index", "traffic_density"]
+    },
+    "use_cases": [
+      "Predicting air pollution levels using machine learning",
+      "Smart traffic management systems based on real-time density",
+      "Energy consumption monitoring and optimization",
+      "Real-time environmental monitoring and reporting"
+    ],
+    "download_info": {
+      "download_link": "https://example.com/download/smart_city_sensors",
+      "license_type": "MIT",
+      "attribution": "City IoT Department"
+    },
+    "user_feedback": {
+      "comments": [
+        {
+          "user": "data_scientist_01",
+          "comment": "Great dataset for time-series forecasting!",
+          "timestamp": "2024-06-20"
+        },
+        {
+          "user": "ml_engineer_23",
+          "comment": "Would love to see more metadata about sensor locations.",
+          "timestamp": "2024-06-21"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How frequently is this dataset updated?",
+          "answer": "The dataset is updated every 24 hours."
+        },
+        {
+          "question": "Can I use this dataset for commercial projects?",
+          "answer": "Yes, it's licensed under MIT, so you can use it commercially."
+        }
+      ]
+    }
+  }
+  
